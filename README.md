@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/single-price-grid-component-x6BqNHHOg)
-- Live Site URL: [Add live site URL here](https://tender-almeida-51150e.netlify.app)
+- [Solution URL](https://www.frontendmentor.io/solutions/single-price-grid-component-x6BqNHHOg)
+- [Live Site URL](https://tender-almeida-51150e.netlify.app)
 
 ## My process
 

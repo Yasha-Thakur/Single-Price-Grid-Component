@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: var(--Light-Gray);
+}
+
+section {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 650px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container {
+  padding: 30px;
+}
+
+.container-1 {
+  background-color: #fff;
+  grid-area: 1/ 1/ 2/ 3;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.container-1 h2 {
+  color: var(--Cyan);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.container-1 h3 {
+  color: var(--Bright-Yellow);
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.container-1 p {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.container-2 {
+  background-color: var(--Cyan);
+  grid-row: 2;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.container-2 h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.container-2 p {
+  color: var(--Light-Gray);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.container-2 h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.container-2 h1 span {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--Light-Gray);
+}
+
+.button {
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: var(--Bright-Yellow);
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  font-weight: 700;
+  box-shadow: 0px 4px 10px 1px #00000033;
+}
+
+.container-3 {
+  background-color: var(--Grayish-Blue);
+  grid-row: 2;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.container-3 h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.container-3 p {
+  line-height: 1.5rem;
+  color: #fff;
+}
+
+.attribution {
+  margin-top: 50px;
+  color: var(--Grayish-Blue);
+}
+.att-a {
+  color: var(--Grayish-Blue);
+}
+.att-a:hover {
+  text-decoration: none;
+  color: var(--Cyan);
+}
+
+.attribution-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.att-p {
+  margin-right: 5px;
+}
+
+@media (max-width: 840px) {
+  .card {
+    width: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 250px;
+  }
+}
